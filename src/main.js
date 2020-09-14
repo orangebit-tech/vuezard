@@ -1,14 +1,19 @@
-import Vue from 'vue'
-import { router } from './router/router'
-import store from './store'
-// import VueSocket from "vue-ws";
-import App from './App.vue'
-// import Vuex from 'vuex'
-// Vue.use(VueSocket);
+import Vue            from 'vue/dist/vue.min.js'
+import { router }     from './router/router'
+import store          from './store'
+import VueResource    from 'vue-resource'
+import GitHubAPI      from 'vue-github-api'
+import App            from './App.vue'
+import TrendChart     from "vue-trend-chart";
+
+Vue.use(VueResource)
+Vue.use(GitHubAPI, { token: '5b82185450e1527059aecc1d1cc72b4a5edb9daf' })
+Vue.use(TrendChart);
+
 Vue.config.productionTip = false
 
 new Vue({
-  router,
   store,
+  router,
   render: h => h(App),
 }).$mount('#app')
