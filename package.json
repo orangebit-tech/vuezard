@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "epic-spinners": "^1.1.0",
     "scrapedin": "^1.0.21",
     "vue": "^2.6.11",
     "vue-github-api": "^0.1.7",
