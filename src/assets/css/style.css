@@ -1,0 +1,33 @@
+
+/* Palette */
+.black {
+    color: #0B0C10;
+  };
+  .grey {
+    color: #202833;
+  };
+  .lightgrey {
+    color: #C5C6C8;
+  };
+  .green {
+    color: #66FCF1;
+  };
+  .darkgreen {
+    color: #45A29F;
+  };
+  
+  .bg-black {
+    background-color: #0B0C10;
+  };
+  .bg-grey {
+    background-color: #202833;
+  };
+  .bg-lightgrey {
+    background-color: #C5C6C8;
+  };
+  .bg-green {
+    background-color: #66FCF1;
+  };
+  .bg-darkgreen {
+    background-color: #45A29F;
+  };
