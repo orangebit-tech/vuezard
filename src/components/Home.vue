@@ -1,19 +1,23 @@
 <template>
-    <div>
+    <div> 
+        <div class="header">
+            <Header/>
+        </div>
         <div class="main-frame">
-      <div class="info">
-        <div class="image" :style="{'background-image': `url(${imageUrl.sample})`}">
-            <!-- <img class="png" src="../assets/alien.png" alt=""> -->
-            <h1 class="initials">A A</h1>
-            <div class="smile"></div>
+            <div class="info">
+                <div class="image">
+                <!-- <img class="png" src="../assets/alien.png" alt=""> -->
+                <!-- <h1 class="initials">A A</h1>
+                <div class="smile"></div> -->
+                <h1 class="initials">{{code}}</h1>
+            </div>
+            <div class="title">
+                <div class="inner-title">
+                    <h1>Aziz Aznabakiyev</h1>
+                    <h3 class="webdev" href="">Web Developer</h3>
+                </div>
+            </div>
         </div>
-        <div class="title">
-          <div class="inner-title">
-            <h1>Aziz Aznabakiyev</h1>
-            <h3 class="green" href="">Web Developer | UX Engineer</h3>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="buttons">
       <router-link is-active="is-active" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
@@ -25,24 +29,22 @@
 </template>
 
 <script>
+import Header from './Header'
 export default {
     name: 'Home',
+    components: {
+        Header
+    },
     data() {
         return {
-            imageUrl:{
-                sample: require( '../assets/img_190852.png')
-            },
+            code: ' </>',
             buttons: [
                 {
                 name: 'Overview',
                 url: '/home/overview'
                 },
                 {
-                name: 'Job Experience',
-                url: '/home/jobexperience'
-                },
-                {
-                name: 'Skills',
+                name: 'Skills & Technologies',
                 url: '/home/skills'
                 },
                 {
@@ -50,7 +52,7 @@ export default {
                 url: '/home/projects'
                 },
                 {
-                name: 'Contacts',
+                name: 'Contact',
                 url: '/home/contacts'
                 }
             ]
