@@ -1,10 +1,11 @@
 
 import axios from 'axios';
+import {GITHUB_TOKEN} from '../../env.js'
 
 
 const state = {
     user:               'orangebit-tech',
-    token:              '5b82185450e1527059aecc1d1cc72b4a5edb9daf',
+    token:              GITHUB_TOKEN,
     githubApiUrl:       'https://api.github.com/',
     username:           'orangebit-tech',
     repo_gixcore:       'guide/',
@@ -15,9 +16,11 @@ const state = {
     commits_vuezard:    0,
     totalContributions: 'Loading...',
     loading:            false,
+    chartData:          {},
 }
 const getters = {
     getContributions:   (state) => state.totalContributions,
+    getChartData:       (state) => state.chartData,
     getLoading:         (state) => state.loading,
     // getGithubUrl:   (state) => state.githubUrl,
     // getUserRepos:   (state) => state.userRepos,
@@ -58,7 +61,6 @@ const actions = {
         })
 
         axios.all([request_gixcore, request_ta, request_vuezard]).then(axios.spread((...responses) => {
-
         const responseOne = responses[0]
         const contribs_gixcore = responseOne.data.owner.reduce(function(a,b){return a+b}, 0)
         console.log(contribs_gixcore)
@@ -71,8 +73,19 @@ const actions = {
         const contribs_vuezard = responesThree.data.owner.reduce(function(a,b){return a+b}, 0)
         console.log(contribs_vuezard)
 
+        var chartData = [];
+
+        for(var i=0; i<responses[0].data.owner.length; i++){
+            chartData[i] = responses[0].data.owner[i] + responses[1].data.owner[i] + responses[2].data.owner[i]
+        }
+        chartData.splice(0, 35)
+        const chartDataObj = Object.assign({}, chartData);
+
         const sum = contribs_gixcore + contribs_ta + contribs_vuezard
         console.log('Total Contriburions: '+sum)
+        commit('UPDATE_CHART_DATA', chartDataObj)
+        console.log('chart data array: ')
+        console.log(chartDataObj)
         console.log('gixcore repo fetched')
         commit('UPDATE_CONTRIBUTIONS', sum)
         commit('UNSET_LOADING')
@@ -131,6 +144,9 @@ const mutations = {
     },
     UPDATE_CONTRIBUTIONS(state, sum){
         state.totalContributions = sum
+    },
+    UPDATE_CHART_DATA(state, data){
+        state.chartData = data
     }
 };
 
