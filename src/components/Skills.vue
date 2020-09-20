@@ -31,6 +31,9 @@ export default {
                     name: 'Node JS, Adonis JS'
                 },
                 {
+                    name: 'ReactJS, Redux'
+                },
+                {
                     name: 'Laravel'
                 },
                 {
@@ -42,6 +45,9 @@ export default {
                 {
                     name: 'SQL Databases'
                 },
+                {
+                    name: 'OS: Win/Mac/Linux'
+                },
             ],
             skills: [
                 {
@@ -52,7 +58,10 @@ export default {
                 },
                 {
                     name: 'PHP'
-                },            
+                },  
+                {
+                    name: 'Bash Scripting'
+                },          
                 {
                     name: 'Linux Server, VPS'
                 },
