@@ -44,6 +44,23 @@ export const routes = [
                         path: "/home/projects",
                         name: "Projects",
                         component: Projects,
+                        children: [
+                            {
+                                path: "/home/projects/gixcore",
+                                name: 'Gixcore',
+                                componet: Projects,
+                            },
+                            {
+                                path: "/home/projects/theassistant",
+                                name: 'The Assistant',
+                                componet: Projects,
+                            },
+                            {
+                                path: "/home/projects/electrominer",
+                                name: 'Electrominer',
+                                componet: Projects,
+                            }
+                        ]
                     },
                     {
                         path: "/home/contacts",
