@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="buttons">
-      <router-link is-active="is-active" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
+      <router-link is-active="is-active" :class="{'is-still-active': $route.path.includes(button.name.toLowerCase() + '/')}" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
     </div>
     <div class="router-2">
       <router-view></router-view>
