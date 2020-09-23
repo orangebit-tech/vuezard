@@ -24,15 +24,20 @@
                     </div> -->
                     <div class="chart">
                         <area-chart 
-                            :legend="false"
                             style="opacity: 0.8"
                             :points="false"
                             height="150px" 
-                            
-                            :colors="['#66FCF1']" 
+                            :colors='["#66FCF1"]'
                             :data="this.getChartData"
+                            :dataset='{borderWidth: 3, borderColor: "#45A29F"}'
+                            :library= lib
                             >
                         </area-chart>
+                        <div class="y-axis">
+                            <a style='float: left'>{{this.month[date.monthOne()-2]}}</a>
+                            <a>{{this.month[date.monthOne()-1]}}</a> 
+                            <a style="float: right">{{this.month[date.monthOne()]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +59,34 @@ export default {
             text: {
                 text: 'I am a full-stack web developer who is passionate about technology. I like to write code and make dynamic web applications with my teammates to make the best contribution to share with the world. I gained hands-on experience working with HTML, CSS, javascript, node, vuejs, and vuex. The culture and experience of that, has given me the drive to learn more and be a better developer. I am excited to see what the future holds. ',
                 lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            }
+            },
+
+            // Chart Styling
+            lib: {
+                legend: {
+                    labels: {
+                        fontColor: "#C5C6C8"
+                    }
+                },
+                scales: {
+                    yAxes: [
+                        {
+                        ticks: { fontColor: "#C5C6C8" },
+                        scaleLabel: { fontColor: "#202833" }
+                        }
+                    ],
+                    xAxes: [
+                        {
+                            ticks: { fontColor: "#0B0C10"}
+                        }
+                    ]
+                }
+            },
+
+            date: {
+                monthOne: () => new Date().getMonth(),
+            },
+            month: [],
         }
     },
     computed: {
@@ -73,7 +105,23 @@ export default {
             console.log(await this.getActivity())
         }
     },
+    beforeMount(){
+        this.month[0] = "Jan";
+        this.month[1] = "Feb";
+        this.month[2] = "Mar";
+        this.month[3] = "Apr";
+        this.month[4] = "May";
+        this.month[5] = "Jun";
+        this.month[6] = "Jul";
+        this.month[7] = "Aug";
+        this.month[8] = "Sep";
+        this.month[9] = "Oct";
+        this.month[10] = "Nov";
+        this.month[11] = "Dec";
+    },
     created(){
+      
+        
         this.show()
     }
 }
