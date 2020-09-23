@@ -122,7 +122,13 @@ h3 {
   width: static;
   background-color: #66FCF1;
   color: #0B0C10 !important;
-  border: 1px solid  #66FCF1;
+
+}
+.is-still-active {
+  width: static;
+  background-color: transparent;
+  color: #45A29F !important;
+  border: 1px solid #45A29F
 }
 
 .router-2 {
@@ -174,6 +180,67 @@ h3 {
 .contribs {
   text-align: center;
 }
+.chartjs-render-monitor {
+  z-index: 2 !important;
+}
+.y-axis {
+  padding-left: 28px;
+  padding-right: 10px;
+  color: #C5C6C8;
+  font-size: 13px;
+  height: 18px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: -24px;
+  background-color: #0B0C10 !important;
+  opacity: 0.8;
+}
+.project-widget {
+  transition: 0.3s;
+  opacity: 0.5;
+  
+}
+.project-widget:hover {
+  cursor: pointer;
+  opacity: 0.8 ;
+  border: 1px solid #45A29F;
+  /* box-shadow: 0 0 2px #C5C6C8;
+  -moz-box-shadow: 0 0 2px #C5C6C8;
+  -webkit-box-shadow: 0 0 2px #C5C6C8;
+  -o-box-shadow: 0 0 2px #C5C6C8; */
+}
+.project h3 {
+  color: #C5C6C8;
+}
+.project.is-active {
+  background-color: transparent !important;
+  width: static;
+  color: #0B0C10 !important;
+  border: none !important;
+}
+.project.is-active .project-widget {
+  opacity: 1;
+  border: 1px solid  #66FCF1 !important;
+  box-shadow: 0 0 0px #45A29F;
+  -moz-box-shadow: 0 0 0px #45A29F;
+  -webkit-box-shadow: 0 0 0px #45A29F;
+  -o-box-shadow: 0 0 0px #45A29F;
+}
+.project.is-active .project-widget:hover {
+
+}
+.description {
+
+  text-align: left;
+  padding-left: 1rem;
+  color: #C5C6C8 !important;
+}
+.description h3 {
+    color: #C5C6C8;
+}
+.description a {
+  color: #45A29F;
+}
 .widget-title {
   color: #45A29F;
   font-size: 16px;
@@ -188,12 +255,10 @@ h3 {
   border: 1px solid #202833;
 }
 svg {
-    fill: #45A29F !important;
-    stroke: #45A29F;
-    font-size: 11px;
+
 }
 .horizontal {
-  stroke: #66FCF1 !important;
+
 }
 .skills {
 
@@ -203,6 +268,13 @@ svg {
   letter-spacing: 1px;
   line-height: 22px;
   color: #66FCF1;
+}
+p {
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-size: 16px;
+  text-align: center;
+
 }
 .division {
   margin-left: 0px !important;
