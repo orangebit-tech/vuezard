@@ -45,9 +45,7 @@ export default {
                 {
                     name: 'SQL Databases'
                 },
-                {
-                    name: 'OS: Win/Mac/Linux'
-                },
+
             ],
             skills: [
                 {
