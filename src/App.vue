@@ -160,7 +160,10 @@ h3 {
   padding-right: 20px !important;
   font-weight: 300;
   letter-spacing: 1px;
-  line-height: 22px;
+  line-height: 15px;
+}
+.summary p {
+  margin-top: -10px;
 }
 .spinner {
   text-align: center !important;
