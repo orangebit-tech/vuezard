@@ -24,6 +24,7 @@ export const routes = [
                 path: "home",
                 name: "Home",
                 component: Home,
+                redirect: '/home/overview',
                 children: [
                     {
                         path: "/home/overview",
