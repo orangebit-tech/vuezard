@@ -57,7 +57,7 @@ export default {
     data(){
         return {
             text: {
-                text: 'I am a full-stack web engineer, who is passionate about technologies. While being self-motivated, I am a great team player. Love collaborating with teammates in building dynamic web applications. I have a hands-on experience working on Vue JS, Angular, Adonis JS, Laravel, utilizing JavaScript, HTML, CSS, PHP. (AWS, Linux, REST API, VPS, Cloud Servers.) This experience exposed me to the entire software development process from beginning to end, including SEO and mobile development. Blockchain Enthusiast. ',
+                text: 'I am a full-stack web engineer, who is passionate about technologies. While being self-motivated, I am a great team player. Love collaborating with teammates in building dynamic web applications. I have a hands-on experience working on Vue JS, Angular, Adonis JS, Laravel, utilizing JavaScript,  HTML, CSS, Tailwind, PHP. (AWS, Linux, REST API, VPS) This experience exposed me to the entire software development process from beginning to end, including SEO and mobile development. Blockchain Enthusiast',
                 lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
             },
 

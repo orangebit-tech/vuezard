@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="app">
+  
 
     <div class="router">
       <router-view></router-view>
@@ -9,9 +10,11 @@
 
 <script>
 
+
 export default {
   name: 'App',
   components: {
+
   },
   data(){
     return {
@@ -31,6 +34,7 @@ export default {
 <style>
 @import '/assets/style.css'; 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital@1&display=swap');
 
 #app {
   font-family: 'Barlow', sans-serif;
@@ -93,6 +97,9 @@ h3 {
 .header {
   margin-bottom: 130px;
 }
+.wide {
+  display: none;
+}
 .webdev {
   font-weight: 400;
   font-size: 22px;
@@ -145,6 +152,13 @@ h3 {
   vertical-align: top;
   padding-left: 15px !important;
   padding-right: 15px !important;
+  vertical-align: center !important;
+  padding-top: 1%;
+  min-width: 200px;
+}
+.block img {
+  max-width: 240px;
+  border-radius: 5px;
 }
 .block-inline {
   display: inline-block;
@@ -168,7 +182,10 @@ h3 {
 .spinner {
   text-align: center !important;
   vertical-align: center;
-  margin-left: 46%;
+
+    margin-left: auto;
+    margin-right: auto;
+
   margin-top: 12%;
 }
 .gh-contributions {
@@ -199,14 +216,17 @@ h3 {
   opacity: 0.8;
 }
 .project-widget {
+  margin-top: 30px;
   transition: 0.3s;
   opacity: 0.5;
+  max-height: 64px;
+  border: none;
   
 }
 .project-widget:hover {
   cursor: pointer;
   opacity: 0.8 ;
-  border: 1px solid #45A29F;
+  border-bottom: 1px solid #C5C6C8;
   /* box-shadow: 0 0 2px #C5C6C8;
   -moz-box-shadow: 0 0 2px #C5C6C8;
   -webkit-box-shadow: 0 0 2px #C5C6C8;
@@ -223,7 +243,7 @@ h3 {
 }
 .project.is-active .project-widget {
   opacity: 1;
-  border: 1px solid  #66FCF1 !important;
+  border-bottom: 1px solid  #45A29F !important;
   box-shadow: 0 0 0px #45A29F;
   -moz-box-shadow: 0 0 0px #45A29F;
   -webkit-box-shadow: 0 0 0px #45A29F;
@@ -233,10 +253,14 @@ h3 {
 
 }
 .description {
-
-  text-align: left;
-  padding-left: 1rem;
+  display: inline-block;
+  text-align: center;
   color: #C5C6C8 !important;
+  max-width: 1000px;
+
+}
+.description p {
+    font-size: 18px !important;
 }
 .description h3 {
     color: #C5C6C8;
@@ -252,10 +276,12 @@ h3 {
   color: #66FCF1;
 }
 .chart {
+  padding: 5px;
   width: 400px;
-  height: 150px;
+  height: 140px;
   display: inline-block;
   border: 1px solid #202833;
+    margin-bottom: 20px;
 }
 svg {
 
@@ -331,6 +357,29 @@ p {
     -webkit-animation: fadeinout 2s linear forwards;
     animation: fadeinout 2s linear forwards;
 }
+.gixcore {
+  display: inline;
+  font-size: 40px;
+  font-family: 'Audiowide', cursive !important;
+  color: #B2B3B4 !important;
+  /* text-shadow: 1px 1px 2px rgb(57, 100, 116); */
+}
+.gc-logo{
+  text-decoration: none;
+}
+.header ul {
+  list-style: none;
+  font-weight: 500 !important;
+}
+.nav-mob {
+  display: none;
+}
+.page-title {
+    display: none;
+  }
+.dropdown__menu-link:hover{
+
+}
 @keyframes cssAnimation {
     to {
         width:0;
@@ -368,10 +417,25 @@ p {
   .skills-block {
       min-height: 432px;
   }
+  
 }
 @media screen and (max-width: 840px) {
+  .loading {
+text-align: center !important;
+  }
+  .block-right {
+    min-height: 170px;
+  }
   .chart-widget {
     width: auto !important;
+    padding-bottom: 10px;
+  }
+  .chart {
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+  .y-axis {
+    margin-top: -28px;
   }
   .router-2 {
     padding: 0px;
@@ -382,15 +446,39 @@ p {
   .block {
     width: auto;
     height: auto;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0px ;
+    margin-right: 0px;
   }
   .blocks {
     padding: 0px !important;
   }
+  .project-widget{
+    margin: 20px;
+  }
 }
 @media screen and (max-width: 704px){
+  .project-widget {
+  }
+  .page-title {
+    display: block;
+  }
+  .project-widget a{
+    text-decoration: none !important;
+  }
+  .nav-mob {
+    float: right;
+  position: fixed;
+    display: block !important;
+    top: 0px;
+    right: 0px;
+    margin-right: 0px !important;
+  }
+  .header.wide {
+    display: none !important;
+    padding-right: 0px;
+  }
   .buttons {
+    display: none;
   }
   .button {
     margin-left: 0px;
@@ -398,7 +486,73 @@ p {
     display: block;
   } 
 }
+@media screen and (max-width: 590px) {
+  .chart {
+  width: auto;
+  height: auto;
+}
+}
 @media screen and (max-width: 485px){
+  .division {
+    width: auto !important;
+  }
+  .skills-block {
+    max-width: auto !important;
+  }
+  .main-frame {
+    height: auto !important;
+  }
+  .title {
+    display: block;
+    margin-left: 0px;
+  } 
+}
+@media screen and (max-width: 407px){
+  body {
+     padding: 0px !important;
+  }
+  .info {
+    padding: 0px;
+    margin: 0px !important;
+    
+  }
+  .main-frame {
+margin-top: -40px !important;
+  }
+  .summary {
+    line-height: 12px;
+  }
+  .chart {
+  width: 250px;
+  height: auto;
+
+}
+.blocks {
+  padding: 0px;
+}
+.block-inline {
+  display: block !important;
+}
+.project-widget {
+  padding: 10px;
+  margin: 10px;
+ 
+}
+.project-widget:hover {
+    border: none !important;
+}
+.project.is-active .project-widget {
+   border: none !important;
+}
+.project-widget img{
+  width: 150px;
+}
+.gixcore {
+  font-size: 28px !important;
+}
+.block {
+  padding: 0px 5px;
+}
   .division {
     width: auto !important;
   }
