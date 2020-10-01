@@ -1,7 +1,8 @@
 <template>
     <div> 
         <div class="header">
-            <Header/>
+            <Header class="wide"/>
+            <NavbarMob :buttons="buttons"/>
         </div>
         <div class="main-frame">
             <div class="info">
@@ -19,6 +20,9 @@
             </div>
         </div>
     </div>
+    <div class="page-title">
+        <h2 style="font-weight: 400; margin-top: 30px">{{this.$route.name}}</h2>
+    </div>
     <div class="buttons">
       <router-link is-active="is-active" :class="{'is-still-active': $route.path.includes(button.name.toLowerCase() + '/')}" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
     </div>
@@ -30,13 +34,16 @@
 
 <script>
 import Header from './Header'
+import NavbarMob from './NavbarMob.vue'
 export default {
     name: 'Home',
     components: {
-        Header
+        Header,
+        NavbarMob
     },
     data() {
         return {
+            show: false,
             code: ' </>',
             buttons: [
                 {
