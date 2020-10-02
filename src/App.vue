@@ -27,6 +27,7 @@ export default {
     }
   },
   created () {
+    console.log(process.env.GITHUB_TOKEN)
   }
 }
 </script>
@@ -81,6 +82,12 @@ h3 {
 }
 .png {
   max-width: 105px;
+}
+.inline-link {
+  color: #45A29F !important
+}
+.inline-link:hover {
+  color: #66FCF1 !important
 }
 .initials {
   font-size: 40px;

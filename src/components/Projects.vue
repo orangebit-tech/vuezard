@@ -22,7 +22,9 @@
         <div v-if="$route.name == 'Electrominer'" class="description">
             <p>
                 Cryptocurrency mining web platform with own hardware and public access(POS). Participated in datacenter creation, network implementation, building local API server and further cloud integration. Coordinated a team of frontend/backend/mobile developers, gaining hands-on experience in building multilingual website(Laravel), news page with Twitter API integration, building user's dashboard (AngularJS) and third party API providers integration. Work with domains, subdomains, AWS and VPS setup and management.  Managed development process of a multiplatform mobile app(Ionic Cordova JS). Hands-on assistance in writing and deploying Ethereum Smart Contracts.
-                Mining as a service. multiuser access. as a service
+               
+                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://demoapp.rocks/electrominer' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
+              
             </p>
         </div>
     </div>
