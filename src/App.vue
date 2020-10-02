@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style>
-@import '/assets/style.css'; 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital@1&display=swap');
 
