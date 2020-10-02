@@ -12,8 +12,8 @@ import { fas }              from '@fortawesome/free-solid-svg-icons'
 import { far }              from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon }  from '@fortawesome/vue-fontawesome'
 import VueClipboard         from 'vue-clipboard2'
-
-
+import dotenv               from 'dotenv'
+dotenv.config()
 
 library.add(fab,fas,far)
 

@@ -16,6 +16,7 @@
     "axios": "^0.20.0",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
     "epic-spinners": "^1.1.0",
     "scrapedin": "^1.0.21",
     "vue": "^2.6.11",
