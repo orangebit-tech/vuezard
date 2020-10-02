@@ -32,9 +32,9 @@ const actions = {
             mode: 'no-cors',
         }).then((res) => {
             commit('UPDATE_CHART_DATA', res.data)
-            console.log('gixcore repo fetched')
+            console.log('github repo fetched')
             commit('UNSET_LOADING')
-            console.log(res)
+            // console.log(res)
             return res.data
         })
     },
