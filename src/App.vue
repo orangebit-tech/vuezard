@@ -27,7 +27,7 @@ export default {
     }
   },
   created () {
-    console.log(process.env.GITHUB_TOKEN)
+    // console.log(process.env.GITHUB_TOKEN)
   }
 }
 </script>

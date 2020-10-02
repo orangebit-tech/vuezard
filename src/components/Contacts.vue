@@ -82,7 +82,7 @@ export default {
         if(this.message !== ''){
             setTimeout(() => {
                 this.message = '';
-                console.log('message: '+this.message)
+                // console.log('message: '+this.message)
             }, 1000);
         }
     }
