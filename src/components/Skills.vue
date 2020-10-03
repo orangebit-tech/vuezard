@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="blocks">
         <div style="text-align: left" class="block block-inline block-left skills-block">
             <div class="division">
                 <h3 class="label">Technologies</h3>

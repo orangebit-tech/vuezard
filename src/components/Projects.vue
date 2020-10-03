@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="blocks project-blocks" style="">
         <router-link v-for="(project, index) in projects" :key="index" class="project" :to="project.url">
-            <div class="block block-inline project-widget">
+            <div class="block block-inline  project-widget">
                 <!-- <h3 v-if='project.name !== "GixCore"'>{{project.name}}</h3> -->
                 <a v-if='project.name == "GixCore"' class="gc-logo" ><h3 class="gixcore">Gix<h3 class="gixcore" style="color: #1997C6 !important">Core</h3></h3></a>
                 <a v-if='project.name == "The Assistant"' class="gc-logo" href="/"><img :src="taLogo.sample" alt="The Assistant Logo"></a>

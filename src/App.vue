@@ -61,7 +61,16 @@ h1 {
 h3 {
  color: #66FCF1;
  font-weight: 400;
+ margin-top: 10px;
+ margin-bottom: 0px !important;
 } 
+p {
+letter-spacing: 1px !important;
+    margin-block-start: 10px !important;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .main-frame {
   border: 1px solid #202833;
   height: 170px;
@@ -154,13 +163,17 @@ h3 {
   border: 1px solid #202833;
   width: 250px;
   height: 250px;
-  margin: 20px;
+  margin: 20px 10px;
+  margin-bottom: 10px;
   vertical-align: top;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding: 5px 15px;
   vertical-align: center !important;
-  padding-top: 1%;
+  
   min-width: 200px;
+  margin-top: 10px;
+}
+.project-blocks {
+  border: 1px solid #202833; display: inline-block; margin-top: 10px
 }
 .block img {
   max-width: 240px;
@@ -180,10 +193,9 @@ h3 {
   padding-right: 20px !important;
   font-weight: 300;
   letter-spacing: 1px;
-  line-height: 15px;
 }
 .summary p {
-  margin-top: -10px;
+  
 }
 .spinner {
   text-align: center !important;
@@ -222,7 +234,8 @@ h3 {
   opacity: 0.8;
 }
 .project-widget {
-  margin-top: 30px;
+  margin-top: 20px;
+
   transition: 0.3s;
   opacity: 0.5;
   max-height: 64px;
@@ -296,7 +309,7 @@ svg {
 
 }
 .skills {
-
+  
   margin-left: 0px !important;
   padding-left: 0px !important;
   list-style: none;
@@ -324,6 +337,7 @@ p {
 
   text-align: center !important;
   width: auto;
+  height: auto;
 }
 .skill {
   color: #C5C6C8;
@@ -364,13 +378,15 @@ p {
     animation: fadeinout 2s linear forwards;
 }
 .gixcore {
+ 
   display: inline;
-  font-size: 40px;
+  font-size: 42px;
   font-family: 'Audiowide', cursive !important;
   color: #B2B3B4 !important;
   /* text-shadow: 1px 1px 2px rgb(57, 100, 116); */
 }
 .gc-logo{
+  margin-top: -5px !important;
   text-decoration: none;
 }
 .header ul {
@@ -421,7 +437,11 @@ p {
 }
 @media screen and (max-width: 1013px){
   .skills-block {
+  
       min-height: 432px;
+  }
+  .division {
+    display: block;
   }
   
 }
@@ -431,6 +451,7 @@ text-align: center !important;
   }
   .block-right {
     min-height: 170px;
+    width: auto !important;
   }
   .chart-widget {
     width: auto !important;
@@ -446,9 +467,6 @@ text-align: center !important;
   .router-2 {
     padding: 0px;
   }
-  .block-right {
-    width: auto !important;
-  }
   .block {
     width: auto;
     height: auto;
@@ -456,14 +474,32 @@ text-align: center !important;
     margin-right: 0px;
   }
   .blocks {
-    padding: 0px !important;
+    padding: 15px !important;
   }
   .project-widget{
-    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 8px;
   }
+  .project-blocks {
+  margin-top: 25px
 }
-@media screen and (max-width: 704px){
+.contact {
+  margin-top: 25px;
+}
+}
+@media screen and (max-width: 705px){
+  h2 {
+    margin-top: 15px;
+    margin-bottom: -5px !important;
+    
+  }
   .project-widget {
+
+  }
+  .project-blocks {
+  
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
   .page-title {
     display: block;
@@ -512,6 +548,14 @@ text-align: center !important;
     display: block;
     margin-left: 0px;
   } 
+  .webdev {
+    margin-bottom: 15px !important;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: -10px !important;
+    
+  }
 }
 @media screen and (max-width: 407px){
   body {
@@ -544,6 +588,18 @@ margin-top: -40px !important;
   margin: 10px;
  
 }
+.contact {
+  padding-top: 15px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: -10px !important;
+
+}
+.dynamic-link {
+  margin-bottom: 15px !important;
+}
+.link {
+  margin-bottom: 15px !important;
+}
 .project-widget:hover {
     border: none !important;
 }
@@ -558,19 +614,23 @@ margin-top: -40px !important;
 }
 .block {
   padding: 0px 5px;
+  margin-bottom: 15px;
 }
-  .division {
-    width: auto !important;
+.division {
+  width: auto !important;
+}
+.skills-block {
+  max-width: auto !important;
+}
+.main-frame {
+  height: auto !important;
+}
+.title {
+  display: block;
+  margin-left: 0px;
+} 
+ .project-blocks {
+  height: auto;
   }
-  .skills-block {
-    max-width: auto !important;
-  }
-  .main-frame {
-    height: auto !important;
-  }
-  .title {
-    display: block;
-    margin-left: 0px;
-  } 
 }
 </style>

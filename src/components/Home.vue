@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="page-title">
-        <h2 style="font-weight: 400; margin-top: 30px">{{this.$route.name}}</h2>
+        <h2 style="font-weight: 400; margin-bottom: 0px;">{{this.$route.name}}</h2>
     </div>
     <div class="buttons">
       <router-link is-active="is-active" :class="{'is-still-active': $route.path.includes(button.name.toLowerCase() + '/')}" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>

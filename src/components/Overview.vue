@@ -2,11 +2,11 @@
     <div>
         <div class="blocks">
             <div class="block block-inline block-left summary">
-                <h3 class="">About</h3>
+                <h3 >About</h3>
                 <p>{{text.text}}</p>
             </div>
             <div class="block block-inline block-right">
-                <h3 class="">Activity</h3>
+                <h3 style="padding-bottom: 20px">Activity</h3>
                 <div v-if="this.getLoading" class="loading">
                     <half-circle-spinner
                         :animation-duration="1000"
@@ -102,7 +102,7 @@ export default {
             'getActivity'
         ]),
         async show(){
-            console.log(await this.getActivity())
+            // console.log(await this.getActivity())
         }
     },
     beforeMount(){
