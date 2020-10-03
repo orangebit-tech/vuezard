@@ -102,7 +102,7 @@ export default {
             'getActivity'
         ]),
         async show(){
-            // console.log(await this.getActivity())
+           await this.getActivity()
         }
     },
     beforeMount(){
@@ -120,8 +120,6 @@ export default {
         this.month[11] = "Dec";
     },
     created(){
-      
-        
         this.show()
     }
 }

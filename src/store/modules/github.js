@@ -34,7 +34,7 @@ const actions = {
             commit('UPDATE_CHART_DATA', res.data)
             console.log('github repo fetched')
             commit('UNSET_LOADING')
-            // console.log(res)
+            console.log(res.data)
             return res.data
         })
     },
