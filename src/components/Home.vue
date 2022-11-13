@@ -14,7 +14,7 @@
             </div>
             <div class="title">
                 <div class="inner-title">
-                    <h1>Aziz Aznabakiyev</h1>
+                    <h1>Aziz F</h1>
                     <h3 class="webdev" href="">Web Developer</h3>
                 </div>
             </div>
