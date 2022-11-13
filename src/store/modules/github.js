@@ -27,7 +27,7 @@ const actions = {
         commit('SET_LOADING')
 
             await axios( {
-            url: 'http://localhost:8000', 
+            url: 'https://a3i3.dev:8443/', 
             method: 'get',
             mode: 'no-cors',
         }).then((res) => {
