@@ -11,12 +11,15 @@
         <div v-if="$route.name  ==  'Gixcore'" class="description">
             <p>
                 <a>Gixcore</a> is a web application that lets users build a custom PC. The app has a products compatibility checking feature, API connection to Amazon and Newegg, has a custom CMS. Built on <a>Vue JS</a> and <a>Adonis JS</a> frameworks.
+                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://alpha.gixcore.com' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
+
             </p>
         </div>
         <div v-if="$route.name == 'The Assistant'" class="description">
             <p>
                 <a>The Assistant</a> is a web application connects customers with local businesses, services and freelancers. Made on <a>Vue JS</a> and headless <a>WordPress</a>
-                
+                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://ta1.demoapp.rocks' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
+
             </p>
         </div>
         <div v-if="$route.name == 'Electrominer'" class="description">

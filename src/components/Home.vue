@@ -7,28 +7,26 @@
         <div class="main-frame">
             <div class="info">
                 <div class="image">
-                <!-- <img class="png" src="../assets/alien.png" alt=""> -->
-                <!-- <h1 class="initials">A A</h1>
-                <div class="smile"></div> -->
-                <h1 class="initials">{{code}}</h1>
-            </div>
-            <div class="title">
-                <div class="inner-title">
-                    <h1>Aziz F</h1>
+                    <!-- <img class="png" src="../assets/alien.png" alt=""> -->
+                    <!-- <h1 class="initials">A A</h1>
+                    <div class="smile"></div> -->
+                    <h1 class="initials">{{code}}</h1>
+                </div>
+                <div class="title">
+                    <h1 style="margin-bottom: 12px;">Aziz F</h1>
                     <h3 class="webdev" href="">Web Developer</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page-title">
-        <h2 style="font-weight: 400; margin-bottom: 0px;">{{this.$route.name}}</h2>
-    </div>
-    <div class="buttons">
-      <router-link is-active="is-active" :class="{'is-still-active': $route.path.includes(button.name.toLowerCase() + '/')}" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
-    </div>
-    <div class="router-2">
-      <router-view></router-view>
-    </div>
+        <div class="page-title">
+            <h2 style="font-weight: 400; margin-bottom: 0px;">{{this.$route.name}}</h2>
+        </div>
+        <div class="buttons">
+            <router-link is-active="is-active" :class="{'is-still-active': $route.path.includes(button.name.toLowerCase() + '/')}" class="button" v-for="(button, index) in buttons" :key="index" :to="button.url" >{{button.name}}</router-link>
+        </div>
+        <div class="router-2">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -44,7 +42,7 @@ export default {
     data() {
         return {
             show: false,
-            code: ' </>',
+            code: '<>',
             buttons: [
                 {
                 name: 'Overview',

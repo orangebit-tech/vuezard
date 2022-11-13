@@ -1,7 +1,5 @@
 <template>
   <div id="app" class="app">
-  
-
     <div class="router">
       <router-view></router-view>
     </div>
@@ -65,7 +63,7 @@ h3 {
  margin-bottom: 0px !important;
 } 
 p {
-letter-spacing: 1px !important;
+  letter-spacing: 1px !important;
     margin-block-start: 10px !important;
     margin-block-end: 2em;
     margin-inline-start: 0px;
@@ -73,19 +71,15 @@ letter-spacing: 1px !important;
 }
 .main-frame {
   border: 1px solid #202833;
-  height: 170px;
+  border-radius: 6px;
+  height: 142px;
   width: 100%;
 }
 .info {
-  display: inline-block;
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 .image {
-  margin-top: 20px;
-  display: inline-block;
-  border: 3px solid #45A29F;
-  width: 90px;
-  height: 80px;
   border-radius: 20%;
 }
 .png {
@@ -98,16 +92,17 @@ letter-spacing: 1px !important;
   color: #66FCF1 !important
 }
 .initials {
-  font-size: 40px;
-  margin-top: 12px;
-  margin-left: 5px;
+  font-size: 100px;
   color: #45A29F;
-  letter-spacing: 4px;
+  letter-spacing: 7px;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
 }
 .title {
-  margin-left: 25px;
-  vertical-align: top;
-  display: inline-block;
+  margin-left: 20px;
+      padding-top: 35px;
+
 }
 .header {
   margin-bottom: 130px;
@@ -125,11 +120,12 @@ letter-spacing: 1px !important;
 }
 .button {
   font-size: 18px;
-  border: 1px solid #202833;
+  border: 1px solid transparent;
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 5px;
   transition: 0.3s;
   text-decoration: none;
@@ -161,6 +157,7 @@ letter-spacing: 1px !important;
 .block {
   color: #C5C6C8;
   border: 1px solid #202833;
+  border-radius: 6px;
   width: 250px;
   height: 250px;
   margin: 20px 10px;
@@ -177,7 +174,7 @@ letter-spacing: 1px !important;
 }
 .block img {
   max-width: 240px;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .block-inline {
   display: inline-block;
