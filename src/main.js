@@ -13,6 +13,7 @@ import { far }              from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon }  from '@fortawesome/vue-fontawesome'
 import VueClipboard         from 'vue-clipboard2'
 import dotenv               from 'dotenv'
+import vuetify from './plugins/vuetify'
 dotenv.config()
 
 library.add(fab,fas,far)
@@ -28,5 +29,6 @@ Vue.config.productionTip = false
 new Vue({
   store,
   router,
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')
