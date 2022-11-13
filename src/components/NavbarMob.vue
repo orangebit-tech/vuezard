@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 hr {
   border: 0;
   height: 0;
@@ -64,11 +64,11 @@ hr {
   border-top: 1px solid var(--color-gray);
 }
 
-// Header Menu
+
 
 .header {
   padding: 1rem 3rem 1rem 5rem;
-  &__nav {
+  /* &__nav {
     position: relative;
   }
   &__navbar {
@@ -96,10 +96,9 @@ hr {
     &:focus {
       outline: 0;
     }
-  }
+  } */
 }
 
-// Dropdown Menu
 
 .dropdown__menu {
   opacity: 0.9;
@@ -116,7 +115,7 @@ hr {
   background-color: #0B0C10;
   border: 1px solid var(--color-gray);
   background-clip: padding-box;
-  &-link {
+  /* &-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -140,10 +139,9 @@ hr {
     font-weight: 500;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
+  } */
 }
 
-// Animation Menu Icon
 
 .slide-fade-enter-active,
 .slide-fade-leave-active {
@@ -160,7 +158,6 @@ hr {
   transform: translateX(-31px);
 }
 
-// Dropdown Menu Animation
 
 .dropdown-enter-active,
 .dropdown-leave-active {
@@ -172,7 +169,6 @@ hr {
   transform: translateY(30px);
 }
 
-// Wrapper
 
 .main {
   border: 1px solid white;
@@ -182,7 +178,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  &__subtitle {
+  /* &__subtitle {
     color: #4f5959;
     font-weight: 100;
     margin-bottom: 2rem;
@@ -202,6 +198,6 @@ hr {
     &:hover {
       color: #ffad1f;
     }
-  }
+  } */
 }
 </style>
