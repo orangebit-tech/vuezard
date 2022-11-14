@@ -1,6 +1,6 @@
 # vuezard
 
-## <a target='_blank' href="https://a3i3.dev/">Demo</a>
+## <a target="_blank" href="https://a3i3.dev/">Demo</a>
 
 ## Project setup
 ```
