@@ -159,7 +159,7 @@ p {
   border: 1px solid #202833;
   border-radius: 6px;
   width: 250px;
-  height: 250px;
+  height: 272px;
   margin: 20px 10px;
   margin-bottom: 10px;
   vertical-align: top;
@@ -293,8 +293,8 @@ p {
 }
 .chart {
   padding: 5px;
-  width: 400px;
-  height: 140px;
+  width: 430px;
+  height: 170px;
   display: inline-block;
   border: 1px solid #202833;
     margin-bottom: 20px;
@@ -326,6 +326,7 @@ p {
   vertical-align: top;
   display: inline-block;
   width: 340px !important;
+  padding-bottom: 15px;
 }
 .division .label {
   margin-left: 0px !important;
@@ -340,8 +341,8 @@ p {
   color: #C5C6C8;
 }
 .contact {
-  width: 350px;
-  height: 110px;
+  width: 360px;
+  height: unset;
   padding: 20px;
   text-align: center;
 }

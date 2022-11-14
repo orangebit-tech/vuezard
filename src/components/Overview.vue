@@ -6,7 +6,12 @@
                 <p>{{text.text}}</p>
             </div>
             <div class="block block-inline block-right">
-                <h3 style="padding-bottom: 20px">Github Activity</h3>
+                <h3 style="padding-bottom: 20px; display: flex; justify-content: center;">
+                    Github Activity
+                    <a target="_blank" class="dynamic-link inline-link" href="https://github.com/orangebit-tech">
+                        <font-awesome-icon class="external-link-icon" style="margin-left: 10px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" />
+                    </a>
+                </h3>                
                 <div v-if="this.getLoading" class="loading">
                     <half-circle-spinner
                         :animation-duration="1000"
@@ -26,7 +31,7 @@
                         <area-chart 
                             style="opacity: 0.8"
                             :points="false"
-                            height="150px" 
+                            height="170px" 
                             :colors='["#66FCF1"]'
                             :data="this.getChartData"
                             :dataset='{borderWidth: 3, borderColor: "#45A29F"}'

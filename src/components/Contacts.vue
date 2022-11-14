@@ -57,12 +57,7 @@ export default {
                     name: 'linkedin',
                     icon: ["fab", "linkedin"],
                     url: 'https://linkedin.com/in/a3i3 '
-                },
-                {
-                    name: 'facebook',
-                    icon: ["fab", "facebook"],
-                    url: 'https://www.facebook.com/people/Aziz-Aznabakiyev/100010267336445'
-                },
+                }
             ]
         }
     },
