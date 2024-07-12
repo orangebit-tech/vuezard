@@ -52,13 +52,8 @@ export const routes = [
                                 componet: Projects,
                             },
                             {
-                                path: "/home/projects/theassistant",
-                                name: 'The Assistant',
-                                componet: Projects,
-                            },
-                            {
-                                path: "/home/projects/electrominer",
-                                name: 'Electrominer',
+                                path: "/home/projects/appops",
+                                name: 'appops.pro',
                                 componet: Projects,
                             }
                         ]
