@@ -45,7 +45,7 @@ export default {
                 {
                     name: 'email',
                     icon: 'envelope',
-                    content: 'support@orangebit.info',
+                    content: 'support@orangebit.dev',
                     url: ''
                 },
                 {

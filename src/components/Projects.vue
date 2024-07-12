@@ -4,30 +4,21 @@
             <div class="block block-inline  project-widget">
                 <!-- <h3 v-if='project.name !== "GixCore"'>{{project.name}}</h3> -->
                 <a v-if='project.name == "GixCore"' class="gc-logo" ><h3 class="gixcore">Gix<h3 class="gixcore" style="color: #1997C6 !important">Core</h3></h3></a>
-                <a v-if='project.name == "The Assistant"' class="gc-logo" href="/"><img :src="taLogo.sample" alt="The Assistant Logo"></a>
-                <a v-if='project.name == "Electrominer"' class="gc-logo" href="/"><img style="margin-top: -3px"  :src="elLogo.sample" alt="Electrominer Logo"></a>
+                <a v-if='project.name == "appops.pro"' style="font-size: 32px; color: #C5C6C8;" class="gc-logo" href="/">appops.pro</a>
             </div>
         </router-link>
         <div v-if="$route.name  ==  'Gixcore'" class="description">
             <p>
                 <a>Gixcore</a> is a web application that lets users build a custom PC. The app has a products compatibility checking feature, API connection to Amazon and Newegg, has a custom CMS. Built on <a>Vue JS</a> and <a>Adonis JS</a> frameworks.
-                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://alpha.gixcore.com' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
+                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://alpha.gixcore.com' target="_blank" class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
 
             </p>
         </div>
-        <div v-if="$route.name == 'The Assistant'" class="description">
+        <div v-if="$route.name == 'appops.pro'" class="description">
             <p>
-                <a>The Assistant</a> is a web application connects customers with local businesses, services and freelancers. Made on <a>Vue JS</a> and headless <a>WordPress</a>
-                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://ta1.demoapp.rocks' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
+                <a>appops.pro</a> is web-based SQL management tool on <a>EC2/RDS</a> for writing and executing queries, now integral to the technical evaluation of new hires. Made on <a>Vue JS</a>
+                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://appops.pro' target="_blank" class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
 
-            </p>
-        </div>
-        <div v-if="$route.name == 'Electrominer'" class="description">
-            <p>
-                Cryptocurrency mining web platform with own hardware and public access(POS). Participated in datacenter creation, network implementation, building local API server and further cloud integration. Coordinated a team of frontend/backend/mobile developers, gaining hands-on experience in building multilingual website(Laravel), news page with Twitter API integration, building user's dashboard (AngularJS) and third party API providers integration. Work with domains, subdomains, AWS and VPS setup and management.  Managed development process of a multiplatform mobile app(Ionic Cordova JS). Hands-on assistance in writing and deploying Ethereum Smart Contracts.
-               
-                <a style=" text-decoration: none; color: #C5C6C8; display: block" href='https://demoapp.rocks/electrominer' class="dynamic-link inline-link" >View <font-awesome-icon class="external-link-icon" style="margin-left: 6px;" v-if='link!==""' :icon="['fas', 'external-link-alt']" /></a>
-              
             </p>
         </div>
     </div>
@@ -38,9 +29,6 @@ export default {
     name: 'Projects',
     data(){
         return {
-            taLogo: {
-                sample: require('../assets/ta-logo.png')
-            },
             elLogo: {
                 sample: require('../assets/el-logo.png')
             },
@@ -50,23 +38,12 @@ export default {
                     url: '/home/projects/gixcore',
                 },
                 {
-                    name: "The Assistant",
-                    url: '/home/projects/theassistant',
-                },
-                {
-                    name: "Electrominer",
-                    url: '/home/projects/electrominer',
-                },
+                    name: "appops.pro",
+                    url: '/home/projects/appops',
+                }
                 
             ]
         }
-    },
-    methods: {
-
-    },
-    created(){
-        // console.log(this.$parent)
     }
-
 }
 </script>
