@@ -31,13 +31,16 @@ export default {
                     name: 'Node JS, Adonis JS'
                 },
                 {
-                    name: 'ReactJS, Redux'
-                },
-                {
                     name: 'Laravel'
                 },
                 {
-                    name: 'AWS S3, R53, EC2'
+                    name: 'Docker'
+                },
+                {
+                    name: 'Bitbucket'
+                },
+                {
+                    name: 'AWS'
                 },
                 {
                     name: 'Custom / Headless Wordpress'
